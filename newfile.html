@@ -1,0 +1,66 @@
+
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/slick-1.8.1/slick/slick-theme.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    
+        .new_slider{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+       
+        
+    }
+       .new_slider div{
+            position: relative;
+           width: 200px;
+           height: 200px;
+            
+        }
+        .new_slider div img{
+               object-fit: cover;
+            }
+            .new-slider{
+              position: relative;
+              display: flex;
+              justify-content: space-between;
+              max-width: 1230px;
+              margin: 0 auto;
+            }
+
+            .slide{
+              position: relative;
+              width: 18%;
+            }
+    
+    </style>
+</head>
+<body>
+<div class="new-slider">
+  <div class="slide"><img src="images/insta1.jpg" alt=""></div>
+  <div class="slide"><img src="images/insta2.jpg" alt=""></div>
+  <div class="slide"><img src="images/insta3.jpg" alt=""></div>
+  <div class="slide"><img src="images/insta4.jpg" alt=""></div>
+  <div class="slide"><img src="images/insta5.jpg" alt=""></div>
+  <div class="slide"><img src="images/insta5.jpg" alt=""></div>
+</div>
+    <script type="text/javascript" src="assets/slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+         $('.new-slider').slick({
+           infinite: true,
+           slidesToShow: 5,
+           slidesToScroll: 3
+});
+      });
+      
+    </script>
+</body>
+</html>
