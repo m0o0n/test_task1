@@ -5,7 +5,31 @@ $(document).ready(function () {
     var close_menu = $('.text_and_close i');
     var open_cart = $('.cart');
     var close_cart = $('.cart_menu');
-    console.log(show)
+    var plus = $('.plus');
+    var minus = $('.minus');
+    console.log(show);
+    plus.on('click', function(e) {
+        var target = e.target.parentNode
+        console.log(target.className)
+        if(target.className == "plus"){
+            target.parentNode.children[1].value++;
+            
+        }else if(target.className == "count_block"){
+            target.children[1].value++;
+        }
+       
+    });
+    minus.on('click', function(e) {
+        var target = e.target.parentNode
+        console.log(target.className)
+        if(target.className == "minus"){
+            target.parentNode.children[1].value--;
+            
+        }else if(target.className == "count_block"){
+            target.children[1].value--;
+        }
+       
+    });
     open_cart.on('click', function() {
         var cart = $('.wrapper_cart_container');
         cart.css({"display" : "flex"});
